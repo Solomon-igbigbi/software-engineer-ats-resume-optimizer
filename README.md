@@ -1,4 +1,4 @@
-# software-engineer-ats-resume-optimizer
+# Software Engineer ATS Resume Optimizer
 
 ATS resume analyzer for software engineers — scores your resume, surfaces keyword gaps, and rewrites weak bullets.
 
