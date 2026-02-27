@@ -16,7 +16,7 @@ Covers roles at fintech companies, startups, and big tech. Knows the keyword lan
 ## Install
 
 ```bash
-npx skills add yourusername/your-repo
+npx skills add solomon-igbigbi/software-engineer-ats-resume-optimizer
 ```
 
 ## Usage
