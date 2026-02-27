@@ -1,0 +1,51 @@
+{
+  "skill_name": "software-engineer-ats-resume-optimizer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you review my resume and give me feedback? I'm applying for backend engineering roles in FinTech companies.\n\nKemi Adeyemi\nkemi.adeyemi@gmail.com | Lagos, Nigeria | github.com/kemiadeyemi\n\nSoftware Developer\n\nEXPERIENCE\n\nPayBridge Nigeria | Software Developer | Mar 2022 – Present\n- Built and maintained backend services for the payment platform\n- Integrated with multiple bank APIs for transfers and bill payments\n- Worked on KYC verification flow\n- Helped fix performance issues in the database\n- Participated in on-call rotation\n\nFinAware Tech | Junior Developer | Jan 2021 – Feb 2022\n- Developed RESTful APIs using Node.js\n- Assisted with database management tasks\n- Fixed bugs reported by QA team\n\nEDUCATION\nUniversity of Lagos | B.Sc. Computer Science | 2020\n\nSKILLS\nJavaScript, Node.js, Express, PostgreSQL, MongoDB, Docker, AWS, Git, REST APIs",
+      "expected_output": "A structured analysis that: (1) classifies as backend resume, (2) gives a score in the 45-65% range reflecting the weak bullets and missing keywords, (3) identifies at least 5 specific missing keywords like TypeScript, NestJS, Redis, Kafka, CI/CD, (4) rewrites at least 3 bullets with strong verbs + tech + metrics, (5) provides a prioritized top-changes list, (6) notes the missing Summary/headline as a critical gap",
+      "files": [],
+      "expectations": [
+        "Output clearly classifies this as a backend or backend-leaning resume",
+        "An estimated ATS score is provided and falls below 70% (reflecting the weak state of the resume)",
+        "At least 5 specific missing keywords are identified by name (e.g., TypeScript, NestJS, Redis, microservices, CI/CD, Kafka)",
+        "At least 3 rewritten bullet points are provided that each include a strong action verb, a specific technology, and a measurable outcome or metric",
+        "The missing Summary or headline section is flagged as a gap that needs to be added",
+        "A prioritized list of top recommended changes is present in the output",
+        "The vague 'AWS' listing in Skills is flagged — specific services (Lambda, RDS, SQS, etc.) should be named"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here is my resume and a job description I'm targeting. Please analyze how well my resume matches and what I should change.\n\n--- RESUME ---\nMichael Torres\nmichael.torres@outlook.com | +44 7700 900123 | London, UK | linkedin.com/in/michaeltorres | michaeltorres.dev\n\nFrontend Engineer\n\nSUMMARY\nFrontend engineer with 4 years of experience building web applications. Skilled in React and JavaScript. Passionate about creating great user experiences.\n\nEXPERIENCE\n\nGrowStack Ltd | Frontend Engineer | Jun 2021 – Present\n- Built new features for the SaaS dashboard using React\n- Improved loading time of the main page\n- Created reusable components for the design system\n- Worked closely with UX designers to implement Figma designs\n- Added tests for key components\n\nWebAgency Co | Junior Frontend Developer | Sep 2019 – May 2021\n- Developed landing pages using HTML, CSS, and JavaScript\n- Maintained WordPress sites\n- Used jQuery for interactive elements\n\nEDUCATION\nUniversity College London | B.Sc. Computer Science | 2019\n\nSKILLS\nReact, JavaScript, HTML, CSS, Git, Figma, Jest\n\n--- JOB DESCRIPTION ---\nSenior Frontend Engineer — FinFlow (London / Hybrid)\n\nWe're looking for a Senior Frontend Engineer to join our growing product team. You will own the frontend architecture for our real-time financial dashboard, which serves 200K+ business customers.\n\nRequirements:\n- 4+ years of experience in frontend development\n- Strong proficiency in React and TypeScript\n- Experience with Next.js (SSR/SSG a big plus)\n- State management: Redux or Zustand preferred\n- Strong understanding of performance optimization (Core Web Vitals, Lighthouse)\n- Experience with accessibility (WCAG 2.1 AA)\n- Testing: React Testing Library, Cypress or Playwright\n- CI/CD experience (GitHub Actions or similar)\n- Experience working with design systems\n- Nice to have: GraphQL, WebSockets, real-time data, financial domain knowledge",
+      "expected_output": "A structured analysis that: (1) classifies as frontend resume, (2) runs keyword gap analysis against the JD showing present vs missing, (3) flags TypeScript as a critical gap since JD requires it, (4) flags Next.js, Zustand/Redux, Core Web Vitals, a11y/WCAG, RTL, Cypress/Playwright, CI/CD as missing, (5) notes the vague loading-time bullet and rewrites it, (6) gives a score reflecting partial JD match (probably 50-65%), (7) TypeScript is top priority in changes list",
+      "files": [],
+      "expectations": [
+        "Output classifies this as a frontend resume",
+        "A JD keyword gap analysis is performed — the output distinguishes which JD keywords are present in the resume and which are missing",
+        "TypeScript is identified as a critical or high-priority missing keyword given the JD requirement",
+        "At least 4 other JD keywords are identified as missing (from: Next.js, Zustand/Redux, Core Web Vitals, a11y/WCAG, React Testing Library, Cypress, Playwright, CI/CD)",
+        "The vague bullet 'Improved loading time of the main page' is flagged and a rewrite with a specific metric is provided",
+        "Estimated ATS score is provided and reflects the keyword gaps — below 70%",
+        "TypeScript appears as the #1 or #2 priority in the top recommended changes list",
+        "Existing strengths are acknowledged (4 years experience match, design system work, complete contact info)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Hey, I want to improve my resume for a Senior Full Stack Engineer role at a startup — probably Node.js + React stack, cloud-native, somewhere that builds developer tools or B2B SaaS. I have 6 years of experience. Here's my resume:\n\nSamantha Osei\nsam.osei@proton.me | Berlin, Germany (Open to remote)\nGitHub: github.com/samosei | Portfolio: samosei.dev\n\nFull Stack Software Engineer\n\nSUMMARY\nPassionate full stack engineer with 6 years of experience building scalable web applications. I love working with TypeScript, React, and Node.js. I care deeply about code quality and developer experience.\n\nPROFESSIONAL EXPERIENCE\n\nDevTools Corp | Senior Full Stack Engineer | Mar 2022 – Present\n- Led development of a CLI tool for local Kubernetes development used by 8,000+ developers worldwide\n- Designed the plugin architecture enabling third-party extensions; grew plugin ecosystem from 0 to 45 community plugins in 12 months\n- Reduced Docker image build time by 62% through multi-stage build optimization and layer caching improvements\n- Built a web-based configuration UI in React + TypeScript that replaced a manual YAML workflow, reducing setup time from 2 hours to 15 minutes\n- Implemented end-to-end test suite with Playwright, achieving 87% coverage of critical user flows\n\nCloudPlatform Inc | Full Stack Engineer | Jun 2019 – Feb 2022\n- Developed REST API backend using Node.js and PostgreSQL for a B2B analytics platform serving 300+ enterprise clients\n- Migrated monolithic architecture to microservices using Docker and Kubernetes, improving deployment frequency from monthly to daily\n- Built real-time data pipeline using Kafka and Redis, reducing data latency from 45 minutes to under 30 seconds\n- Integrated Stripe API for subscription billing; managed $2M+ in annual transaction volume\n- Mentored 3 junior engineers through code reviews and weekly 1:1s\n\nFreelance | Full Stack Developer | Jan 2018 – May 2019\n- Built custom e-commerce sites for 6 small businesses using React and Node.js\n- Delivered projects on average 15% under budget\n\nEDUCATION\nTechnische Universität Berlin | B.Sc. Computer Science | 2017\n\nSKILLS\nLanguages: TypeScript, JavaScript, Python\nFrontend: React, Next.js, Tailwind CSS, Redux Toolkit\nBackend: Node.js, NestJS, Express\nDatabases: PostgreSQL, MongoDB, Redis\nCloud & DevOps: AWS (Lambda, RDS, ECS, S3), Docker, Kubernetes, GitHub Actions, Terraform\nTesting: Playwright, Jest, React Testing Library\nTools: Git, Jira, Figma, Datadog",
+      "expected_output": "A structured analysis that: (1) classifies as full-stack, (2) gives a score above 72% reflecting the strong bullets, metrics, and good keyword coverage, (3) identifies a few specific gaps (e.g., GraphQL, observability terms like OpenTelemetry, distributed tracing), (4) gives nuanced Summary feedback, (5) treats this as a strong resume requiring incremental improvement not a total overhaul, (6) provides 2-3 targeted bullet improvements, (7) mentions the thin Freelance section",
+      "files": [],
+      "expectations": [
+        "Output classifies this as a full-stack resume",
+        "Estimated ATS score is above 72% — the resume has good metrics and keyword coverage and should be scored accordingly",
+        "The analysis explicitly acknowledges concrete strengths — the specific metrics in bullets, the structured Skills section, or similar positives",
+        "At least 2-3 specific keyword or content gaps are still identified (e.g., GraphQL, observability terms, OpenTelemetry, distributed tracing, CDN, or system design language)",
+        "The Summary section is reviewed and specific improvement suggestions are given (not just 'looks good')",
+        "The top recommended changes list focuses on incremental gains — not a fundamental restructuring of the resume",
+        "The Freelance section (two very thin bullets) is mentioned as an area to either strengthen or de-emphasize"
+      ]
+    }
+  ]
+}
